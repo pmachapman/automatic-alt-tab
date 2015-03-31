@@ -78,6 +78,7 @@ Private Sub CommandStart_Click()
             ' Set the inveral, and start the timer
             TimerMain.Interval = Val(TextInterval.Text) * 1000
             TimerMain.Enabled = True
+            TextInterval.Enabled = False
             CommandStart.Caption = "&Stop"
         Else
             ' Show an error
@@ -87,6 +88,7 @@ Private Sub CommandStart_Click()
     Else
         ' Stop the timer
         TimerMain.Enabled = False
+        TextInterval.Enabled = True
         CommandStart.Caption = "&Start"
     End If
 End Sub
