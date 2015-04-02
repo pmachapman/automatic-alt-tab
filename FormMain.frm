@@ -111,8 +111,8 @@ Private Sub TimerMain_Timer()
     keybd_event VK_ALT, 0, 0, 0
     DoEvents
 
-    ' Press Tab
-    keybd_event VK_TAB, 1, 0, 0
+    ' Press Esc
+    keybd_event VK_ESCAPE, 1, 0, 0
     DoEvents
 
     ' Release Alt
